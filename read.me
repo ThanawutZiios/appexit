@@ -1,0 +1,12 @@
+To Test this application
+- Open WebApplicarion1.sln ( Web Application ) and Run
+- Open App1.sln ( UWP ) and make sure that start page and ContentURIs is point to same port as WebApplication1
+- Run UWP Application , it will have 3 button and label on top
+- Close Application it will have code to handle onbeforeunload on window to set localsetting
+- Re-Open UWP now label intop will say "set data from onbeforeunload event"
+- You can click on Reset to set that localsetting back to reset and when exit app it will set to "set data from onbeforeunload event"
+- Now click on open another Windows button , it will bring up another with same code
+- Close the new window and hit Reload Status button the label will not set to "set data from onbeforeunload event"
+- So on onbeforeunload event on secound windows will not fire
+
+What we want here is find the way that if secound/third/... windows is close what event that will fire up
